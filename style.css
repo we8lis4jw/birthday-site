@@ -1,44 +1,29 @@
-/* ===== __________ ===== */
 :root {
-  /* __________ */
   --bg1: #f5dbe5;
   --bg2: #eec9d8;
   --bg3: #e4b8cb;
 
-  /* __________ */
   --card: rgba(255,255,255,0.4);
-
-  /* __________ */
   --text: #5c2a45;
 }
 
-
-/* ===== __________ ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-/* ===== __________ ===== */
 html {
   scroll-snap-type: y mandatory;
 }
 
-
-/* ===== __________ ===== */
 body {
   font-family: 'Comfortaa', sans-serif;
   overflow-x: hidden;
-
   background: linear-gradient(180deg, var(--bg1), var(--bg2), var(--bg3));
-
   color: var(--text);
 }
 
-
-/* ===== __________ ===== */
 .screen {
   height: 100vh;
   scroll-snap-align: start;
@@ -50,41 +35,28 @@ body {
   padding: 20px;
 }
 
-
-/* ===== __________ ===== */
 .card {
   background: var(--card);
-
   padding: 30px;
   border-radius: 20px;
-
   text-align: center;
-
   backdrop-filter: blur(8px);
 }
 
-
-/* ===== __________ ===== */
 h1 {
   font-size: 26px;
   margin-bottom: 10px;
 }
 
-
-/* ===== __________ ===== */
 p {
   font-size: 16px;
 }
 
-
-/* ===== __________ ===== */
 .hearts {
   margin-top: 10px;
   font-size: 22px;
 }
 
-
-/* ===== __________ ===== */
 .scroll {
   display: block;
   margin-top: 20px;
@@ -92,19 +64,17 @@ p {
   opacity: 0.7;
 }
 
-
-/* ===== __________ ===== */
+/* 💌 теперь в том же стиле */
 .letter-card {
-  background: white;
+  background: var(--card);
+  backdrop-filter: blur(8px);
 
   padding: 25px;
   border-radius: 20px;
-
   max-width: 90%;
 }
 
-
-/* ===== __________ ===== */
+/* лепестки */
 .petal {
   position: fixed;
   top: -10px;
@@ -119,18 +89,13 @@ p {
   animation: fall linear infinite;
 }
 
-
-/* ===== __________ ===== */
 @keyframes fall {
   to {
     transform: translateY(110vh) rotate(360deg);
   }
 }
 
-
-/* ===== __________ ===== */
 @media (max-width: 480px) {
-
   h1 {
     font-size: 22px;
   }
