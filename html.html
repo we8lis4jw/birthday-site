@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для тебя 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<section class="screen">
+  <div class="card">
+    <h1 class="hint"> С днём рождения, любимая 💗</h1>
+    <p class="hint">Ты лучшее что со мной когда либо случалось </p>
+    <div class="hearts">💖 💗 💞 💕</div>
+    <span class="scroll">Листай любимая ↓</span>
+  </div>
+</section>
+
+<section class="screen">
+  <div class="card">
+    <h1 class="hint"> 🌸 Ты особенная</h1>
+    <p class="hint">Я готов на всё ради того чтобы каждый <br>день видеть твою улыбку 🌸</p>
+    <span class="scroll">Ещё лситай ↓</span>
+  </div>
+</section>
+
+<section class="screen">
+  <div class="card">
+    <h1 class="hint">Спасибо тебе за всё 💖</h1>
+    <p class="hint">За всё что ты ради меня делала<br> 💖 Я тебя очень ценю</p>
+    <span class="scroll">Ещё чуть-чуть ↓</span>
+  </div>
+</section>
+
+<section class="screen">
+  <div class="letter-card">
+    <h2 class="hint">💌 Письмо</h2>
+    <p class="hint">
+Любимая моя киса, ты уже долистала до письма.<br>
+К сожалению, я не умею писать настолько же красиво, как ты,<br>
+но я очень постараюсь!<br>
+В общем, ты лучшее, что со мной когда-либо случалось.<br>
+Благодаря тебе я научился эмпатии,<br>
+научился справляться со своими эмоциями,<br>
+да и в целом только благодаря тебе я понял, что такое любовь.<br>
+Ты мой лучик света в этом мире 💗<br>
+Всегда помни об этом!<br>
+И помни о том, что я всегда-всегда буду на твоей стороне,<br>
+и у нас с тобой всё обязательно получится!
+</p>
+  </div>
+</section>
+
+<script>
+for (let i = 0; i < 40; i++) {
+  const petal = document.createElement("div");
+  petal.className = "petal";
+
+  petal.style.left = Math.random() * 100 + "vw";
+  petal.style.animationDuration = (6 + Math.random() * 6) + "s";
+  petal.style.animationDelay = Math.random() * 10 + "s";
+  petal.style.top = (-Math.random() * 100) + "vh";
+
+  document.body.appendChild(petal);
+}
+</script>
+
+</body>
+</html>
+
